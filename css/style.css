@@ -128,6 +128,123 @@ body {
   .navbar-dark .navbar-toggler-icon {
     filter: invert(1) grayscale(100%);
   }
+
+  .mobile-drawer {
+  width: 360px;
+  border: none;
+  background: #ffffff;
+}
+
+/* close icon top-left like screenshot */
+.mobile-drawer-header {
+  padding: 20px 18px;
+  border-bottom: 1px solid #eee;
+}
+
+.drawer-close {
+  width: 42px;
+  height: 42px;
+  border: none;
+  background: transparent;
+  font-size: 26px;
+  color: #777;
+}
+
+/* menu list */
+.mobile-nav {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* each row */
+.mobile-nav-item {
+  border-bottom: 1px solid #eee;
+}
+
+/* normal links */
+.mobile-nav-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 22px 22px;
+
+  font-size: 30px;
+  font-weight: 600;
+  color: #6c757d !important;
+  text-decoration: none;
+}
+
+/* buttons (dropdown items like About / Pages) */
+.mobile-nav-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  padding: 22px 22px;
+
+  border: none;
+  background: #fff;
+
+  font-size: 30px;
+  font-weight: 600;
+  color: #6c757d;
+}
+
+/* grey highlight when opened (same like screenshot "Pages" active bg) */
+.mobile-nav-btn:not(.collapsed) {
+  background: #f3f3f3;
+}
+
+/* arrow rotate */
+.mobile-nav-btn i {
+  font-size: 20px;
+  transition: 0.2s ease;
+}
+
+.mobile-nav-btn:not(.collapsed) i {
+  transform: rotate(180deg);
+}
+
+/* submenu container */
+.mobile-submenu {
+  padding: 10px 0 12px;
+  background: #fff;
+}
+
+/* submenu links */
+.mobile-sub-link {
+  display: block;
+  padding: 16px 28px;
+
+  font-size: 26px;
+  font-weight: 600;
+  color: #6c757d;
+  text-decoration: none;
+}
+
+.mobile-sub-link:hover {
+  color: #f74780;
+  background: #fafafa;
+}
+
+/* badge pink circle like screenshot */
+.mobile-badge {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: #f74780;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 }
 
 /* ================= BUTTON ================= */

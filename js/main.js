@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", async () => {
   await loadComponent("process", "components/process-section.html");
   await loadComponent("testimonial", "components/testimonial-section.html");
 
-  await loadComponent("rating", "components/rating-section.html");
+  // await loadComponent("rating", "components/rating-section.html");
   await loadComponent("integrations", "components/integrations-section.html");
 
   await loadComponent("faq", "components/faq-section.html");
