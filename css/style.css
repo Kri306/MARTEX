@@ -77,6 +77,58 @@ body {
 .navbar .nav-link:hover {
     color: #f74780 !important;
 }
+/* =======================
+   MOBILE DRAWER (OFFCANVAS)
+======================= */
+.mobile-drawer {
+  width: 320px;
+  border: none;
+}
+
+.mobile-drawer .offcanvas-header {
+  padding: 18px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.mobile-drawer .offcanvas-body {
+  padding: 20px;
+}
+
+.mobile-drawer .nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: #353f4f !important;
+  padding: 12px 0;
+}
+
+.mobile-drawer .nav-link:hover {
+  color: #f74780 !important;
+}
+
+/* =======================
+   991 RESPONSIVE NAVBAR
+======================= */
+@media (max-width: 991px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff !important;
+    padding: 12px 0;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  }
+
+  /* always show pink logo in mobile */
+  .main-logo {
+    content: url("../images/logo-pink.png");
+  }
+
+  /* hamburger icon dark */
+  .navbar-dark .navbar-toggler-icon {
+    filter: invert(1) grayscale(100%);
+  }
+}
 
 /* ================= BUTTON ================= */
 .btn-get-started {
