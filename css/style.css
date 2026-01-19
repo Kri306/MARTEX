@@ -1,82 +1,80 @@
 /* ================= RESET ================= */
+/* ================= RESET ================= */
 body {
-    margin: 0;
-    font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 /* ================= HERO HEADER ================= */
 .hero-header {
-    min-height: 1005px;
-    background: url("../images/hero-1.jpg") no-repeat center center / cover;
+  min-height: 1005px;
+  background: url("../images/hero-1.jpg") no-repeat center center / cover;
 }
 
 /* ================= NAVBAR (DEFAULT – TRANSPARENT) ================= */
 .navbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent;
-    padding: 22px 0;
-    /* balanced height */
-    transition: all 0.35s ease-in-out;
-    z-index: 1031;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+  padding: 22px 0;
+  transition: all 0.35s ease-in-out;
+  z-index: 1031;
 }
 
 /* Navbar after scroll */
 .navbar.scrolled {
-    position: fixed;
-    background: white;
-    padding: 10px 0;
-    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+  position: fixed;
+  background: white;
+  padding: 10px 0;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
 }
 
 /* container spacing */
 .navbar .container {
-    max-width: 1180px;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin: 0px 190px;
-    padding: 0px 15px;
+  max-width: 1180px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin: 5px 70px;
+  padding: 0px 15px;
 }
 
 /* Logo */
 .navbar-brand {
-    margin-right: 16px;
+  margin-right: 16px;
 }
 
 .navbar-brand img {
-    max-height: 40px;
-    transition: 0.3s ease;
+  max-height: 40px;
+  transition: 0.3s ease;
 }
 
 .navbar.scrolled .navbar-brand img {
-    max-height: 38px;
+  max-height: 38px;
 }
 
 /* Nav links */
 .navbar .nav-link {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    letter-spacing: .1px;
-
-    color: #ffffff !important;
-
-    padding: 10px 15px !important;
-    margin: 0 7px !important;
-
-    border-radius: 6px;
-    transition: all 0.25s ease;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.1px;
+  color: #ffffff !important;
+  padding: 10px 15px !important;
+  margin: 0 7px !important;
+  border-radius: 6px;
+  transition: all 0.25s ease;
 }
 
 .navbar.scrolled .nav-link {
-    color: #353f4f !important;
+  color: #353f4f !important;
 }
 
 .navbar .nav-link:hover {
-    color: #f74780 !important;
+  color: #f74780 !important;
 }
+
 /* =======================
    MOBILE DRAWER (OFFCANVAS)
 ======================= */
@@ -116,7 +114,7 @@ body {
     width: 100%;
     background: #ffffff !important;
     padding: 12px 0;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
   }
 
   /* always show pink logo in mobile */
@@ -130,191 +128,218 @@ body {
   }
 
   .mobile-drawer {
-  width: 360px;
-  border: none;
-  background: #ffffff;
-}
+    width: 360px;
+    border: none;
+    background: #ffffff;
+  }
 
-/* close icon top-left like screenshot */
-.mobile-drawer-header {
-  padding: 20px 18px;
-  border-bottom: 1px solid #eee;
-}
+  /* close icon top-left like screenshot */
+  .mobile-drawer-header {
+    padding: 20px 18px;
+    border-bottom: 1px solid #eee;
+  }
 
-.drawer-close {
-  width: 42px;
-  height: 42px;
-  border: none;
-  background: transparent;
-  font-size: 26px;
-  color: #777;
-}
+  .drawer-close {
+    width: 42px;
+    height: 42px;
+    border: none;
+    background: transparent;
+    font-size: 26px;
+    color: #777;
+  }
 
-/* menu list */
-.mobile-nav {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
+  /* menu list */
+  .mobile-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
 
-/* each row */
-.mobile-nav-item {
-  border-bottom: 1px solid #eee;
-}
+  /* each row */
+  .mobile-nav-item {
+    border-bottom: 1px solid #eee;
+  }
 
-/* normal links */
-.mobile-nav-link {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* normal links */
+  .mobile-nav-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 22px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #6c757d !important;
+    text-decoration: none;
+  }
 
-  width: 100%;
-  padding: 22px 22px;
+  /* buttons (dropdown items like About / Pages) */
+  .mobile-nav-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 22px 22px;
+    border: none;
+    background: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    color: #6c757d;
+  }
 
-  font-size: 30px;
-  font-weight: 600;
-  color: #6c757d !important;
-  text-decoration: none;
-}
+  /* grey highlight when opened */
+  .mobile-nav-btn:not(.collapsed) {
+    background: #f3f3f3;
+  }
 
-/* buttons (dropdown items like About / Pages) */
-.mobile-nav-btn {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  /* arrow rotate */
+  .mobile-nav-btn i {
+    font-size: 20px;
+    transition: 0.2s ease;
+  }
 
-  width: 100%;
-  padding: 22px 22px;
+  .mobile-nav-btn:not(.collapsed) i {
+    transform: rotate(180deg);
+  }
 
-  border: none;
-  background: #fff;
+  /* submenu container */
+  .mobile-submenu {
+    padding: 10px 0 12px;
+    background: #fff;
+  }
 
-  font-size: 30px;
-  font-weight: 600;
-  color: #6c757d;
-}
+  /* submenu links */
+  .mobile-sub-link {
+    display: block;
+    padding: 16px 28px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #6c757d;
+    text-decoration: none;
+  }
 
-/* grey highlight when opened (same like screenshot "Pages" active bg) */
-.mobile-nav-btn:not(.collapsed) {
-  background: #f3f3f3;
-}
+  .mobile-sub-link:hover {
+    color: #f74780;
+    background: #fafafa;
+  }
 
-/* arrow rotate */
-.mobile-nav-btn i {
-  font-size: 20px;
-  transition: 0.2s ease;
-}
-
-.mobile-nav-btn:not(.collapsed) i {
-  transform: rotate(180deg);
-}
-
-/* submenu container */
-.mobile-submenu {
-  padding: 10px 0 12px;
-  background: #fff;
-}
-
-/* submenu links */
-.mobile-sub-link {
-  display: block;
-  padding: 16px 28px;
-
-  font-size: 26px;
-  font-weight: 600;
-  color: #6c757d;
-  text-decoration: none;
-}
-
-.mobile-sub-link:hover {
-  color: #f74780;
-  background: #fafafa;
-}
-
-/* badge pink circle like screenshot */
-.mobile-badge {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: #f74780;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
+  /* badge pink circle */
+  .mobile-badge {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: #f74780;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 /* ================= BUTTON ================= */
 .btn-get-started {
-    background-color: #f74780;
-    color: #ffffff;
-    padding: 10px 22px;
-    border-radius: 8px;
-    border: 2px solid #f74780;
-    font-weight: 600;
-    transition: all 0.3s ease;
+  background-color: #f74780;
+  color: #ffffff;
+  padding: 10px 22px;
+  border-radius: 8px;
+  border: 2px solid #f74780;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
 .btn-get-started:hover {
-    background: transparent;
-    color: #f74780;
+  background: transparent;
+  color: #f74780;
 }
 
-/* ================= DROPDOWN ================= */
-.dropdown:hover>.dropdown-menu {
+/* ======================================================
+   ✅ UPDATED DESKTOP DROPDOWN (About) - Like Screenshot
+====================================================== */
+@media (min-width: 992px) {
+  .dropdown:hover > .dropdown-menu {
     display: block;
-    margin-top: 0;
+    margin-top: 12px;
+  }
 }
 
-.dropdown-menu {
-    border-radius: 12px;
-    border: none;
+/* dropdown box */
+.navbar .dropdown-menu {
+  min-width: 280px;
+  padding: 18px 0;
+  border: none;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
 }
 
-/* ================= MEGA MENU ================= */
+/* dropdown items */
+.navbar .dropdown-menu .dropdown-item {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 24px;
+  color: #353f4f;
+  transition: 0.25s ease;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+  background: transparent;
+  color: #f74780;
+}
+
+/* ======================================================
+   ✅ UPDATED MEGA MENU (Pages) - Like Screenshot
+====================================================== */
 .navbar-nav .dropdown-mega {
-    position: static;
+  position: static;
 }
 
-.navbar-nav .dropdown-mega>.mega-menu {
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 76%;
-    padding: 24px;
-    background: #ffffff;
-    border-radius: 14px;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+.navbar-nav .dropdown-mega > .mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-    transition: all 0.25s ease;
+  width: 92%;
+  max-width: 1200px;
+
+  padding: 38px 45px;
+  border: none;
+  border-radius: 16px;
+
+  background: #ffffff;
+  box-shadow: 0 22px 55px rgba(0, 0, 0, 0.18);
+
+  display: none;
 }
 
-.navbar-nav .dropdown-mega:hover>.mega-menu {
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
+/* show mega menu on hover */
+@media (min-width: 992px) {
+  .navbar-nav .dropdown-mega:hover > .mega-menu {
+    display: block;
+    margin-top: 12px;
+  }
 }
 
+/* mega menu links */
 .mega-menu .dropdown-item {
-    padding: 8px 0;
-    font-weight: 500;
-    color: #222;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 12px 0;
+  color: #353f4f;
 }
 
 .mega-menu .dropdown-item:hover {
-    color: #f74780;
+  color: #f74780;
+  background: transparent;
 }
 
 .mega-menu .badge {
-    font-size: 12px;
-    border-radius: 50px;
+  font-size: 12px;
+  border-radius: 50px;
 }
 
 /* ================= HERO CONTENT ================= */
@@ -326,6 +351,10 @@ body {
 .hero-header h1 {
     font-size: 64px;
     line-height: 1.15;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+
 }
 
 .hero-header p {
