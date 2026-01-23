@@ -79,7 +79,7 @@ body {
    MOBILE DRAWER (OFFCANVAS)
 ======================= */
 .mobile-drawer {
-  width: 320px;
+    width: 50% !important;
   border: none;
 }
 
@@ -637,7 +637,7 @@ body {
 /* ================= SOCIAL MARKETING ================= */
 
 .social-section {
-    padding-bottom: 100px;
+    padding: 100px 0;
 }
 
 .social-title {
@@ -646,14 +646,54 @@ body {
     color: #1f2c46;
 }
 
+/* CARD */
 .social-box {
-    background: rgba(0, 0, 0, .06);
+    background: rgba(0, 0, 0, 0.06);
     border-radius: 22px;
-    padding: 35px 40px;
-    position: relative;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, .06);
-    width: 632px;
-    height: 584px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+/* IMAGE */
+.social-img {
+    max-width: 100%;
+    height: auto;
+    margin: 25px auto 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 991px) {
+    .social-section {
+        padding: 70px 0;
+    }
+
+    .social-title {
+        font-size: 34px;
+    }
+
+    .social-box {
+        padding: 30px 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-title {
+        font-size: 28px;
+    }
+
+    .social-box h4 {
+        font-size: 20px;
+    }
+
+    .social-box p {
+        font-size: 16px;
+    }
 }
 
 
@@ -1232,7 +1272,7 @@ body {
     padding: 25px 20px;
     border-radius: 10px;
     height: 184px;
-    width: 632px;
+
     margin-bottom: 15px;
     transition: background 0.3s ease;
 }
@@ -1252,29 +1292,33 @@ body {
 
 /* Circle */
 .step-circle {
-    width: 120px;
-    height: 50px;
+    width: 46px;
+    height: 46px;
     border-radius: 50%;
     background: #f74780;
     color: #ffffff;
     font-weight: 700;
+    font-size: 16px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     border: 2px solid transparent;
-    transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transition: all 0.3s ease;
     z-index: 2;
 }
+
 
 
 /* Vertical line */
 .step-line {
     position: absolute;
-    top: 66px;
+    top: 52px;
     left: 50%;
     transform: translateX(-50%);
     width: 2px;
-    height: calc(100% - 10px);
+    height: calc(100% - 52px);
     background: #e4e4e4;
 }
 
@@ -1284,6 +1328,33 @@ body {
     color: #f74780;
     border-color: #f74780;
 }
+
+.process-step:last-child .step-line {
+    display: none;
+}
+
+.process-step {
+    display: flex;
+    gap: 24px;
+    padding: 25px 20px;
+    border-radius: 12px;
+    max-width: 632px;
+    transition: background 0.3s ease;
+}
+
+.step-icon-wrap {
+    position: relative;
+    min-width: 46px;
+    display: flex;
+    justify-content: center;
+}
+
+.process-step:hover .step-circle {
+    background: #ffffff;
+    color: #f74780;
+    border-color: #f74780;
+}
+
 
 /* Content */
 .step-content h4 {
